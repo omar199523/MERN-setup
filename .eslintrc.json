@@ -1,11 +1,23 @@
 {
     "env": {
-      "browser": true
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
     },
-   "extends": ["airbnb-base", "plugin:prettier/recommended"],
-    "plugins": ["prettier"],
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 13
+    },
+    "plugins": [
+        "react"
+    ],
     "rules": {
-      // disable es6 rules -- start
-      
+        "linebreak-style":1
     }
-  }
+}
