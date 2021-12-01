@@ -1,0 +1,39 @@
+{
+  "name": "mern-setup",
+  "version": "1.0.0",
+  "description": "MERN setup",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client &&npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/omar199523/MERN-setup.git"
+  },
+  "author": "omar199523",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omar199523/MERN-setup/issues"
+  },
+  "homepage": "https://github.com/omar199523/MERN-setup#readme",
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "nodemon": "^2.0.15",
+    "prettier": "2.5.0"
+  },
+  "dependencies": {
+    "concurrently": "^6.4.0",
+    "config": "^3.3.6",
+    "eslint-config-airbnb": "^19.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.14"
+  }
+}

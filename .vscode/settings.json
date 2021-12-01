@@ -1,0 +1,8 @@
+{
+    // "workbench.iconTheme": "",
+    // "workbench.colorTheme": "",
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint":true 
+    }
+}
