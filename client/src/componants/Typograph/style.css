@@ -1,0 +1,40 @@
+* {
+  color: var(--FontColor);
+}
+.h1 {
+  font-size: 2.62rem;
+  font-weight: bold;
+  color: var-(--HederFontColor);
+}
+.h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.h3 {
+  font-size: 1.5rem;
+  font-weight: 850;
+}
+.h4 {
+  font-size: 1.37rem;
+  font-weight: 850;
+}
+.h5 {
+  font-size: 1.25rem;
+  font-weight: 450;
+}
+.h6 {
+  font-size: 1.12rem;
+  font-weight: normal;
+}
+.p1 {
+  font-size: 1rem;
+  font-weight: 850;
+}
+.p2 {
+  font-size: 1rem;
+  font-weight: 650;
+}
+.p3 {
+  font-size: 1rem;
+  font-weight: normal;
+}

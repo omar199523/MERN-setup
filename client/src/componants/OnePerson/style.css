@@ -1,0 +1,22 @@
+.one-person {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 100px 100px;
+  grid-gap: 1.2;
+  padding: 1em;
+}
+.one-person > * {
+  text-align: center;
+}
+.one-person > button {
+  padding: 0.2em;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: 520;
+  border-radius: 1.5em;
+}
+.one-person > .open-button {
+  background-color: #02897a;
+}
+.one-person > .deleat-button {
+  background-color: #890202;
+}

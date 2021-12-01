@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+html {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --backgroundColor: #fff;
+  --HederFontColor: #173a56;
+  --FontColor: #22343d;
+}
+.darck-mode {
+  --backgroundColor: #22343d;
+  --HederFontColor: #fff;
+  --FontColor: #fff;
+  max-width: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--backgroundColor);
+}
+.App {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.half-circle {
+  width: 100%;
+  height: 150hv;
+  background-color: red;
+  clip-path: circle(30%);
+  z-index: 10;
+}
+.container {
+  padding: 1em;
+  margin: 1em auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 5;
+}
+
+.clear-fext {
+  clear: both;
+}
+.visbule-sx,
+.visbule-ms,
+.visbule-md,
+.visbule-lg {
+  display: none;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.h1 {
+  font-size: 2em;
+}
+
+.align-center {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  .visbule-sx {
+    display: block !important;
+  }
+  .hadin-sx {
+    display: none !important;
+  }
+
+  .product {
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 737px;
+  }
+  .visbule-ms {
+    display: block !important;
+  }
+  .hadin-ms {
+    display: none;
+  }
+  .product:first-of-type {
+    width: 100%;
+  }
+  .product:not(first-of-type) {
+    width: 48%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 962px;
+  }
+  .visbule-md {
+    display: block !important;
+  }
+  .hadin-md {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .visbule-lg {
+    display: block !important;
+  }
+  .hadin-lg {
+    display: none;
+  }
+}
